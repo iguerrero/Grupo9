@@ -9,13 +9,28 @@ public class Usuario {
      * por ej., matrícula y especialidad, van en la clase Medico.
      */
 
-    // Declarar variables de Usuario
+    // Declarar variables de Usuario. Va una de ejemplo.
+    private static String nombre;
 
 
+    // Constructores de la clase. Esto lo hace la IDE
 
-    // Constructor de la clase. Esto lo hace la IDE
+    public Usuario() {
 
+    }
+
+    public Usuario(String nombre) {
+        this.nombre = nombre;
+    }
 
 
     // Getters y Setters de la clase. Estos también los hace la IDE :)
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        Usuario.nombre = nombre;
+    }
 }

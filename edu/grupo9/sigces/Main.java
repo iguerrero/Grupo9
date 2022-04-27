@@ -5,8 +5,20 @@
 
 package edu.grupo9.sigces;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Acá no hay nada");
+        bienvenida();
     }
+
+    private static void bienvenida() {
+        System.out.println("Hola!");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("¿Cómo te llamás?");
+        Usuario usuario = new Usuario(scanner.nextLine());
+        System.out.println("¡Hola, " + usuario.getNombre() + "!");
+    }
+
+
 }
