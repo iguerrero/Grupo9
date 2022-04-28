@@ -1,6 +1,6 @@
 package edu.grupo9.sigces;
 
-public class Usuario {
+public abstract class Usuario {
     /**
      * TODO - significa "Por hacer". Y acá, como ven, hay que hacer TODO.
      * Por empezar, deberían declarar las variables de clase: Nombre, apellido, dni, etc.
@@ -10,7 +10,7 @@ public class Usuario {
      */
 
     // Declarar variables de Usuario. Va una de ejemplo.
-    private static String nombre;
+    private String nombre;
 
 
     // Constructores de la clase. Esto lo hace la IDE
@@ -31,6 +31,6 @@ public class Usuario {
     }
 
     public void setNombre(String nombre) {
-        Usuario.nombre = nombre;
+        this.nombre = nombre;
     }
 }
