@@ -18,8 +18,9 @@ public class Main {
         System.out.println("¿Cómo te llamás?");
 //        Usuario usuario = new Usuario(scanner.nextLine());
 //        System.out.println("¡Hola, " + usuario.getNombre() + "!");
+
         Paciente paciente = new Paciente(scanner.nextLine());
-        System.out.println("¡Hola, " + paciente.getNombre() + "!");
+        System.out.println("¡Hola, " + paciente.obtenerNombre() + "!");
     }
 
 

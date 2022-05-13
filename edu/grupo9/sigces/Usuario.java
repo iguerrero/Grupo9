@@ -10,7 +10,9 @@ public abstract class Usuario {
      */
 
     // Declarar variables de Usuario. Va una de ejemplo.
-    private String nombre;
+    String nombre;
+
+    private String apellido;
 
 
     // Constructores de la clase. Esto lo hace la IDE
@@ -19,18 +21,25 @@ public abstract class Usuario {
 
     }
 
-    public Usuario(String nombre) {
+    public Usuario(String nombre, String apellido) {
         this.nombre = nombre;
     }
 
 
     // Getters y Setters de la clase. Estos también los hace la IDE :)
 
-    public String getNombre() {
+
+    public String obtenerNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void establecerNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String obtenerApellido() { return apellido; }
+
+    public void establecerApellido(String apellido) {
+        this.apellido = apellido;
     }
 }

@@ -10,12 +10,13 @@ public class Paciente extends Usuario {
     // Declarar variables de Usuario. Va una de ejemplo.
 
 
+
     // Constructores de la clase. Esto lo hace la IDE
 
     public Paciente() {
     }
 
     public Paciente(String nombre) {
-        super(nombre);
+        this.nombre = nombre;
     }
 }
